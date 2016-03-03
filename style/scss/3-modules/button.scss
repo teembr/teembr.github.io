@@ -1,0 +1,14 @@
+.primary-btn {
+	background: #ffa200;
+	border:0;
+	border-radius: 2px;
+	color: #fff;
+	cursor: pointer;
+	display:inline-block;
+	padding: .75em 1em;
+	transition: .3s background;
+
+	&:hover {
+		background: lighten(#ffa200, 10%);
+	}
+}

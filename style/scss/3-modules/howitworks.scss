@@ -1,0 +1,30 @@
+.howitworks {
+	padding: 3em;
+	width: 100%;
+
+	h2 {
+		letter-spacing: 0;
+		text-align: center;
+	}
+
+	li {
+		display: inline-block;
+		float: left;
+		padding: 3em;
+		text-align: center;
+		width: 33.33%;
+
+		img {
+			width: 13em;
+		}
+
+		h5 {
+
+			margin-bottom: .5em;
+		}
+
+		p {
+			line-height: 32px;
+		}
+	}
+}

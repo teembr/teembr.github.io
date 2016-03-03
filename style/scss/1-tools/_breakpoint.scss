@@ -1,0 +1,26 @@
+// Grid Creation:
+
+@mixin column($col,$max-cols: 12) {
+
+	width: (100%/$max-cols)*$col;
+}
+
+// Break Points: 
+
+@mixin breakpoint($point) {
+
+	@if $point == desktop-large {
+
+		@media screen and (min-width: 1280px) {
+
+			@content;
+		}
+	}
+
+	@else if $point == desktop {
+		@media screen and (min-width:960px) {
+
+			@content;
+		}
+	}
+}

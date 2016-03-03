@@ -1,0 +1,35 @@
+.main-nav {
+	padding: 1em 3em;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+
+	nav {
+
+		.brand {
+			cursor: pointer;
+			display: inline-block;
+			float: left;
+			padding: .5em 0;
+
+			img {
+				width: 6em;
+			}
+		}
+
+		ul {
+			float: right;
+			padding: 1.2em 0;
+		}
+
+		li {
+			display: inline-block;
+			margin-right: 1em;
+
+			a {
+				color: #fff;
+				display: block;
+			}
+		}
+	}
+}
