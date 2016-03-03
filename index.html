@@ -1,64 +1,141 @@
 <html>
-<head>
-	<meta charset="UTF-8">
-	<title>Teembr Designs</title>
-	<link href='https://fonts.googleapis.com/css?family=Arimo:700|Open+Sans' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="style/main.css">
-</head>
-<body>
-	<header class="main-nav">
-		<nav class="cf">
-			<a class="brand" href="">
-				<img src="images/teembr-logo.svg" alt="">
-			</a>
-			<ul>
-				<li>
-					<a href="">How it Works</a>
-				</li>
-				<li>
-					<a href="">Our Works</a>
-				</li>
-				<li>
-					<a href="">Get a Quote</a>
-				</li>
-			</ul>
-		</nav>
-	</header>
-	<article class="content-wrapper">
-		<section class="cover-video">
-			<section class="vid-wrapper">
-				<video preload="auto" autoplay loop>
-					<source src="video/covervideo.mp4" type="video/mp4">
-				</video>
-				<div class="vid-info">
-					<header>
-						<img src="images/header-typo.svg" alt="">
-						<p>We provide exceptional custom designs for your brand</p>
-					</header>
-					<button class="primary-btn">Request a Design</button>
+	<head>
+		<meta charset="UTF-8">
+			<title>Teembr Designs</title>
+		<link href='https://fonts.googleapis.com/css?family=Arimo:700|Open+Sans' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="style/main.css">
+		<script type="text/javascript">
+			var submitted=false;
+		</script>
+	</head>
+	<body>
+		<header class="main-nav">
+		  <nav class="cf">
+		    <a class="brand" href="">
+		      <img src="images/teembr-logo.svg" alt="">
+		    </a>
+		    <ul>
+		      <li>
+		        <a href="#howitworks">How it Works</a>
+		      </li>
+		      <li>
+		        <a href="">Our Works</a>
+		      </li>
+		      <li>
+		        <a href="">Get a Quote</a>
+		      </li>
+		    </ul>
+		  </nav>
+		</header>
+		<article class="content-wrapper">
+			<section class="cover-video">
+				<section class="vid-wrapper">
+					<video preload="auto" autoplay loop>
+						<source src="video/covervideo.mp4" type="video/mp4">
+					</video>
+					<div class="vid-info">
+						<header>
+							<img src="images/header-typo.svg" alt="">
+							<p>We provide exceptional custom designs for your brand</p>
+						</header>
+						<button class="primary-btn">Request a Design</button>
+					</div>
+				</section>
+			</section>
+			<section class="howitworks">
+				<a name="howitworks"></a>
+				<h2>How it Works</h2>
+				<ul class="cf">
+					<li>
+						<img src="images/icons-01.svg" alt="">
+						<h5>Let’s talk</h5>
+						<p>Exceptional designs starts by knowing what you want. Share with us what your goals and requirements are,and let us handle the rest.</p>
+					</li>
+					<li>
+						<img src="images/icons-02.svg" alt="">
+						<h5>We conceptualize</h5>
+						<p>After brainstorming what best fits your needs, we make the magic happens. Plan, sketch, design and what you asks us comes to life.</p>
+					</li>
+					<li>
+						<img src="images/icons-03.svg" alt="">
+						<h5>You get what you desire</h5>
+						<p>Once the design is done, we make sure everyone is satisfied. We ask for your feedback and work on it if you any. And tadah, you get your designs.</p>
+					</li>
+				</ul>
+			</section>
+			<section class="quote">
+				<div id="quote-google-form">
+					<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){ quotesubmit();}"></iframe>
+					<form action="https://docs.google.com/forms/d/1z-Zvkx6SwTcatdreGOu3PxoEEmYLGUZsnK3eh4nyU7E/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">					
+						<ol role="list" class="ss-question-list" style="padding-left: 0">
+						<div class="ss-form-question errorbox-good" role="listitem">
+						<div dir="auto" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+						<label class="ss-q-item-label" for="entry_1978234705"><div class="ss-q-title">First Name
+						<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+						<span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+						<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+						<input type="text" name="entry.1978234705" value="" class="ss-q-short" id="entry_1978234705" dir="auto" aria-label="First Name  " aria-required="true" required="" title="">
+						<div class="error-message" id="1554555010_errorMessage"></div>
+						<div class="required-message">This is a required question</div>
+						</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+						<div dir="auto" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+						<label class="ss-q-item-label" for="entry_314846051"><div class="ss-q-title">Last Name
+						<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+						<span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+						<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+						<input type="text" name="entry.314846051" value="" class="ss-q-short" id="entry_314846051" dir="auto" aria-label="Last Name  " aria-required="true" required="" title="">
+						<div class="error-message" id="1581701441_errorMessage"></div>
+						<div class="required-message">This is a required question</div>
+						</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+						<div dir="auto" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+						<label class="ss-q-item-label" for="entry_2141565010"><div class="ss-q-title">Email Address
+						<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+						<span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+						<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+						<input type="email" name="entry.2141565010" value="" class="ss-q-short" id="entry_2141565010" dir="auto" aria-label="Email Address  Please check your email!" aria-required="true" required="" title="Please check your email!">
+						<div class="error-message" id="983933016_errorMessage">Please check your email!</div>
+						<div class="required-message">This is a required question</div>
+						</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+						<div dir="auto" class="ss-item ss-item-required ss-paragraph-text"><div class="ss-form-entry">
+						<label class="ss-q-item-label" for="entry_859391114"><div class="ss-q-title">Tell us what you need design for
+						<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+						<span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+						<div class="ss-q-help ss-secondary-text" dir="auto">Eg. Shirt Design, Logo, Web Design</div></label>
+						<textarea name="entry.859391114" rows="8" cols="0" class="ss-q-long" id="entry_859391114" dir="auto" aria-label="Tell us what you need design for Eg. Shirt Design, Logo, Web Design " aria-required="true" required=""></textarea>
+						<div class="error-message" id="708627051_errorMessage"></div>
+						<div class="required-message">This is a required question</div>
+						</div></div></div>
+						<input type="hidden" name="draftResponse" value="[,,&quot;2464271494154892482&quot;]
+						">
+						<input type="hidden" name="pageHistory" value="0">
+
+						<input type="hidden" name="fvv" value="0">
+
+
+						<input type="hidden" name="fbzx" value="2464271494154892482">
+
+						<div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
+						<input type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action ">
+						<div class="ss-password-warning ss-secondary-text">Never submit passwords through Google Forms.</div></td>
+						<td id="progress-container"><div id="progress-bar" class="jfk-progressBar-nonBlocking progress-bar-horizontal goog-inline-block"><div class="progress-bar-horizontal" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" role="progressbar" aria-live="polite"><div class="progress-bar-thumb" style="width: 100%;"></div></div></div>
+						<div id="progress-label" class="progress-label">100%: You made it.</div></td></tr></tbody></table></div></ol>
+					</form>
+				</div>
+				<div id="quote-thank-you" style="display:none">
+					<h4>Thank you for submitting the form!</h4>
 				</div>
 			</section>
-		</section>
-		<section class="howitworks">
-			<h2>How it Works</h2>
-			<ul class="cf">
-				<li>
-					<img src="images/icons-01.svg" alt="">
-					<h5>Let’s talk</h5>
-					<p>Exceptional designs starts by knowing what you want. Share with us what your goals and requirements are,and let us handle the rest.</p>
-				</li>
-				<li>
-					<img src="images/icons-02.svg" alt="">
-					<h5>We conceptualize</h5>
-					<p>After brainstorming what best fits your needs, we make the magic happens. Plan, sketch, design and what you asks us comes to life.</p>
-				</li>
-				<li>
-					<img src="images/icons-03.svg" alt="">
-					<h5>You get what you desire</h5>
-					<p>Once the design is done, we make sure everyone is satisfied. We ask for your feedback and work on it if you any. And tadah, you get your designs.</p>
-				</li>
-			</ul>
-		</section>
-	</article>
-</body>
+		</article>
+		<script type="text/javascript">
+			
+			function quotesubmit(){
+				console.log('thanks');
+				var quote_googleform = document.getElementById('quote-google-form');
+				quote_googleform.style.display = 'none';
+
+				var quote_thankyou = document.getElementById('quote-thank-you');
+				quote_thankyou.style.display = 'block';
+			}
+		</script>
+	</body>
 </html>
