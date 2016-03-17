@@ -17,10 +17,12 @@
 		</style>
 		<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
 		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/jquery.validate.js"></script>
 		<script type="text/javascript" src="js/scroll.js"></script>
 		<script type="text/javascript" src="js/svg.js"></script>
 		<script type="text/javascript" src="js/quote.js"></script>
 		<script type="text/javascript" src="js/menu.js"></script>
+		<script type="text/javascript" src="js/validate.js"></script>
 		<script type="text/javascript">
 			var submitted=false;
 		</script>
@@ -130,22 +132,22 @@
 					<form action="https://docs.google.com/forms/d/1z-Zvkx6SwTcatdreGOu3PxoEEmYLGUZsnK3eh4nyU7E/formResponse" method="POST" id="ss-form" target="hidden_iframe" onsubmit="submitted=true;">
 						<div class="full-name input-wrapper">
 							<label>Full Name<span>*</span></label>
-							<input type="text" name="entry.1978234705" value="" class="ss-q-short" id="entry_1978234705" dir="auto" aria-label="Full Name  " aria-required="true" required="true" title="" placeholder="Full Name">
+							<input type="text" name="fullname entry.1978234705" value="" class="ss-q-short" id="entry_1978234705" dir="auto" aria-label="Full Name  " aria-required="true" required="true" title="" placeholder="Full Name">
 						</div>
 						<div class="customer-email input-wrapper">
 							<label>Email Address<span>*</span></label>
-							<input type="email" name="entry.2141565010" value="" class="ss-q-short" id="entry_2141565010" dir="auto" aria-label="Email Address  Please check your email!" aria-required="true" required="true" title="Please check your email!" placeholder="Email Address">
+							<input type="email" name="email entry.2141565010" value="" class="ss-q-short" id="entry_2141565010" dir="auto" aria-label="Email Address  Please check your email!" aria-required="true" required="true" title="Please check your email!" placeholder="Email Address">
 						</div>
 						<div class="design-type input-wrapper">
 							<label>What do you need?<span>*</span></label>
-							<select name="entry.859391114" id="entry_859391114" aria-label="What do you need?  " aria-required="true" required="true">
+							<select name="need entry.859391114" id="entry_859391114" aria-label="What do you need?  " aria-required="true" required="true">
 								<option value="Apparel Design">Apparel Design</option> 
 								<option value="Branding and Identity Design">Branding and Identity Design</option>
 							</select>
 						</div>
 						<div class="link-source input-wrapper">
 							<label>Link of the designs you like?</label>
-							<textarea name="entry.1303499745" rows="5" cols="0" class="ss-q-long" id="entry_1303499745" dir="auto" aria-label="Links of designs you like?  " required="" placeholder="Eg. https://www.teezily.com/i-fight-rape-culture"></textarea>
+							<textarea name="designslike entry.1303499745" rows="5" cols="0" class="ss-q-long" id="entry_1303499745" dir="auto" aria-label="Links of designs you like?  " required="" placeholder="Eg. https://www.teezily.com/i-fight-rape-culture"></textarea>
 						</div>
 						<div class="details input-wrapper">
 							<label>Other details you want us to know</label>
@@ -167,7 +169,12 @@
 					<h2>Thank you!</h2>
 					<p>We will reply to you shortly.</p>
 				</header>
-			</section>		
+			</section>	
+			<section class="who-we-are" id="whoweare">
+				<a name="whoweare"></a>
+				<h2>Who we are</h2>
+				<p>Teembr is a online graphic design agency that specializes on shirt designs, illustrations, branding, logo and web design. We are a team of passionate designers that aims to provide quality designs our clients will be happy for.</p>
+			</section>	
 		</article>
 	</body>
 </html>
