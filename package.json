@@ -9,11 +9,16 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^6.3.3",
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.0",
     "gulp-concat-css": "^2.2.0",
+    "gulp-postcss": "^6.1.0",
     "gulp-ruby-sass": "^2.0.6",
     "gulp-sass": "^2.2.0",
-    "gulp-sourcemaps": "^1.6.0"
+    "gulp-sourcemaps": "^1.6.0",
+    "lost": "^6.7.2",
+  },
+  "dependencies": {
+    "bourbon-neat": "^1.7.4"
   }
 }
