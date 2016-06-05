@@ -21,6 +21,7 @@
 		ul {
 			float: right;
 			padding: 1.2em 0;
+			width: inherit;
 		}
 
 		li {
@@ -30,6 +31,33 @@
 			a {
 				color: #fff;
 				display: block;
+			}
+		}
+	}
+
+	@media only screen and (max-width: 767px) {
+		nav {
+			.brand {
+				width: 100%;
+    			text-align: center;
+
+				img {
+					margin-top: .3em;
+					width: 6em;
+				}
+			}
+
+			ul {
+				width: 100%;
+			}
+
+			li {
+				width: 100%;
+
+				a {
+					text-align: center;
+    				width: 100%;
+				}
 			}
 		}
 	}
