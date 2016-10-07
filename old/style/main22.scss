@@ -1,0 +1,96 @@
+// Default Styling for Base Elements
+
+* {
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+// Header
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Arimo', sans-serif;
+	font-weight: bold;
+	margin:      0;
+	padding:     0
+}
+
+h1 {
+	font-size: 3em;
+}
+
+h2 {
+	font-size: 2.5em;
+}
+
+h3 {
+	font-size: 2em;
+}
+
+h4 {
+	font-size:1.8em;
+}
+
+h5 {
+	font-size: 1.3em;
+}
+
+h4 {
+	font-size: 1em;
+}
+
+// Paragraph
+p {
+	margin: 0
+}
+
+// Links
+a {
+	text-decoration: none;
+}
+
+// Lists
+ul {
+	list-style: none;
+	margin: 0;
+	padding:    0
+}
+
+.cf {
+
+}
+
+.main-nav {
+	width: 100%;
+
+	a {
+		float: left;
+	}
+
+	ul{
+		float: right;
+		width: 40%;
+	}
+}
+
+.cover-video {
+	position: relative;
+    width: 100%;
+
+    .vid-wrapper {
+    	position: absolute;
+    	width: 100%;
+
+    	video {
+    		object-fit: cover;
+		    position: absolute;
+		    width: 100%;
+		    z-index: -1;
+    	}
+    }
+}
