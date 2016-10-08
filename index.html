@@ -54,7 +54,11 @@
     <script src="js/granim.js"></script>
     <script type="text/javascript">
     	function sendMessage(){
-    		fbq('track', "AddToCart");
+            fbq('track', "AddToCart");
+
+            var screenwidth = screen.width-250;
+            window.open("https://m.me/teembrdesigns", '_blank',"width=950,height=800,left="+screenwidth);
+    		
     	}
     </script>
 </html>
