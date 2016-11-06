@@ -1,0 +1,44 @@
+.how-it-works {
+    background: $gray;
+    padding: 5em;
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+        padding: 0 5em;
+        text-align: center;
+
+        li {
+            flex: 1;
+        }
+    }
+}
+
+@include break(tablet) {
+    .how-it-works {
+        padding: 3em;
+
+        ul {
+            padding: 0;
+        }
+    }
+}
+
+@include break(phone) {
+    .how-it-works {
+        padding: 3em 1em;
+
+        ul {
+            flex-direction: column;
+            padding: 0;
+
+            li {
+                margin-bottom: 3em;
+
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

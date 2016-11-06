@@ -1,0 +1,79 @@
+//Major Components;
+* {
+    color: $dark;
+    font-family:'Source Sans Pro', sans-serif;
+    transition: all .5s ease-in-out;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    margin-bottom: 5em;
+    padding: 0 5em;
+}
+
+@include break(tablet) {
+    section {
+        margin-bottom: 3em;
+        padding: 0 3em;
+    }
+}
+
+@include break(phone) {
+    section {
+        margin-bottom: 3em;
+        padding: 0 1em;
+    }
+}
+
+
+//Text Tags:
+ul {
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 900;
+    margin: 0 0 .3em 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 2.3rem;
+}
+
+@include break(phone) {
+    h2 {
+        font-size: 1.8em;
+    }
+}
+
+p {
+
+    font-size: 1.2em;
+    line-height: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+@include break(phone) {
+    p {
+        font-size: 1.1em;
+    }
+}
+
+span {
+
+    font-size: 1.2em;
+
+}
+
+a {
+    font-size: 1.2em;
+    text-decoration: none;
+}

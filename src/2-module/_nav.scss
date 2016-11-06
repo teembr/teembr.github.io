@@ -1,0 +1,56 @@
+//Navigation Styling
+.home-page nav {
+    background: rgba(255, 255, 255, 0);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+
+    @include break(tablet) {
+        position: absolute;
+    }
+
+    @include break(phone) {
+        position: absolute;
+    }
+
+    .info-container {
+        display: flex;
+        justify-content:space-between;
+        padding: 1.5em 5em;
+
+        .logo {
+            cursor: pointer;
+            display: inline-block;
+            width: 153px;
+
+            @include break(tablet) {
+                margin: 0 auto;
+            }
+
+            @include break(phone) {
+                margin: 0 auto;
+            }
+
+            i {
+                color: $white;
+                font-size: 45px;
+            }
+        }
+
+        .btn {
+            line-height: 32px;
+        }
+
+        @include break(tablet) {
+            .primary-btn-white {
+                display: none;
+            }
+        }
+
+        @include break(phone) {
+            .primary-btn-white {
+                display:none;
+            }
+        }
+    }
+}

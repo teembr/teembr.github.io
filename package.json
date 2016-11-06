@@ -1,24 +1,23 @@
 {
-  "name": "teembr",
+  "name": "TeembrSite",
   "version": "1.0.0",
-  "description": "",
+  "description": "Teembr Landing Page",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Errol B. Tiozon Daisyrie M. Dumali",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^6.3.3",
+    "autoprefixer": "^6.5.1",
+    "css-mqpacker": "^5.0.1",
+    "cssnext": "^1.8.4",
     "gulp": "^3.9.1",
-    "gulp-concat-css": "^2.2.0",
-    "gulp-postcss": "^6.1.0",
-    "gulp-ruby-sass": "^2.0.6",
-    "gulp-sass": "^2.2.0",
-    "gulp-sourcemaps": "^1.6.0",
-    "lost": "^6.7.2",
+    "gulp-postcss": "^6.2.0",
+    "gulp-sass": "^2.3.2",
+    "precss": "^1.4.0"
   },
   "dependencies": {
-    "bourbon-neat": "^1.7.4"
+    "granim": "^1.0.6"
   }
 }

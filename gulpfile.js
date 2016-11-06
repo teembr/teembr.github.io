@@ -1,28 +1,31 @@
-'use strict';
+// Gulp Plugins
+var gulp         = require('gulp');
+var postcss      = require('gulp-postcss');
+var sass         = require('gulp-sass');
+// PostCSS Plugins
+var autoprefixer = require('autoprefixer');
+var cssnext      = require('cssnext');
+var precss       = require('precss');
+var mqpacker     = require('css-mqpacker');
 
-var gulp         = require ('gulp');
-var autoprefixer = require ('autoprefixer');
-var concatCss    = require ('gulp-concat-css')
-var sass         = require ('gulp-sass');
-var sourcemap    = require ('gulp-sourcemaps');
-var postcss      = require ('gulp-postcss');
-var lost       = require ('lost');
 
-// Compile Stylesheets
-gulp.task ('style' , function(){
-  return gulp.src ('style/**/*.scss')
-    .pipe(sourcemap.init())
-    .pipe(sass({outputStyle: 'compressed'}))
-    .pipe(postcss([lost(),autoprefixer()]))
-    .pipe(sourcemap.write())
-    .pipe(concatCss('main.css'))
-    .pipe(gulp.dest('style/'));
+
+gulp.task('css', function(){
+    var processors = [
+        autoprefixer,
+        mqpacker,
+        cssnext,
+        precss
+    ];
+
+    return gulp.src('./src/style.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(postcss(processors))
+        .pipe(gulp.dest('./dest'));
 });
 
-// Watch task for compiling stylesheets
-gulp.task ('watch', function(){
-  gulp.watch('style/**/*.scss', ['style']);
+gulp.task('watch', function(){
+    gulp.watch('./src/**/*.scss', ['css']);
 });
 
-// Default task
 gulp.task('default', ['watch']);

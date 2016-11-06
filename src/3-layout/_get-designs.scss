@@ -1,0 +1,70 @@
+.get-designs {
+    height: 100vh;
+    overflow: hidden;
+    padding: 5em;
+    position: relative;
+
+    .left-header {
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        text-align: left;
+        transform: translateY(-50%);
+        width: 37%;
+        z-index: 2;
+
+        h2 {
+            color: $white;
+        }
+
+        p {
+            color: $white;
+            line-height: 36px;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 2em;
+        }
+    }
+
+    img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+@include break(tablet) {
+    .get-designs {
+        height: 80vh;
+
+        .left-header {
+            left: 50%;
+            text-align: center;
+            transform: translate(-50%, -50%);
+            width: 70%;
+        }
+
+        img {
+            display: none;
+        }
+
+    }
+}
+
+
+@include break(phone) {
+    .get-designs {
+        padding: 3em 1em;
+
+        .left-header {
+            text-align: center;
+            transform: translate(0, -50%);
+            width: 90%;
+        }
+        img {
+            display: none;
+        }
+    }
+}

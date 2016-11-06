@@ -1,0 +1,22 @@
+//Base Styles
+@import '1-base/_mq.scss';
+@import '1-base/_variables.scss';
+@import '1-base/_normalize.scss';
+
+//Module Styles
+@import '2-module/_nav.scss';
+@import '2-module/_btn.scss';
+@import '2-module/_canvas.scss';
+@import '2-module/_section-header.scss';
+
+//Layout Styles
+@import '3-layout/_jumbotron.scss';
+@import '3-layout/_problem-1.scss';
+@import '3-layout/_problem-2.scss';
+@import '3-layout/_get-designs.scss';
+@import '3-layout/_services.scss';
+@import '3-layout/_guides.scss';
+@import '3-layout/_testimonial.scss';
+@import '3-layout/_follow-up.scss';
+@import '3-layout/_howitworks.scss';
+@import '3-layout/_footer.scss';

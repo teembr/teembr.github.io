@@ -1,0 +1,24 @@
+.center-header {
+    margin-bottom: 5em;
+    padding: 0 15em;
+    text-align: center;
+
+    .subheader {
+        line-height: 2em;
+    }
+}
+
+
+@include break(tablet) {
+    .center-header {
+        margin-bottom: 3em;
+        padding: 0;
+    }
+}
+
+@include break(phone) {
+    .center-header {
+        margin-bottom: 3em;
+        padding: 0;
+    }
+}

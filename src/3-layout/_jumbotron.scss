@@ -1,0 +1,28 @@
+.home-page .jumbotron {
+    height: 100vh;
+    position: relative;
+
+    .slogan {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+        img {
+            width: 630px;
+        }
+
+        @include break(tablet) {
+            img {
+                width: 500px;
+            }
+        }
+
+        @include break(phone) {
+            img {
+                width: 300px;
+            }
+        }
+    }
+}

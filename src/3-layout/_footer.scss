@@ -1,0 +1,133 @@
+footer {
+    background: $dark;
+    padding: 3em 5em 0;
+
+    .main-wrapper {
+        display: flex;
+        justify-content: space-around;
+
+        li {
+            flex-basis: auto;
+
+            label {
+                color: #414348;
+                display: block;
+                font-size: 1.2em;
+                font-weight: bold;
+                margin-bottom: .5em;
+            }
+
+            a {
+                color: #414348;
+                display: block;
+                line-height: 2.5em;
+
+                &:hover {
+                    color: $orange;
+                }
+            }
+        }
+
+        .newsletter {
+
+            form {
+                display: flex;
+
+                input:first-child {
+                    border-radius: 3px 0 0 3px;
+                    border: none;
+                    padding: .8em 1.4em;
+                    width: 160px;
+
+                    &::placeholder {
+                        font-size: 15px;
+                    }
+                }
+
+                .primary-btn-orange {
+                    background: $orange;
+                    color: $white;
+                    border-radius: 0 3px 3px 0;
+                    border: 0;
+                }
+
+            }
+        }
+
+        .social  {
+
+            a {
+                display: inline-block;
+
+                i {
+                    color: #414348;
+                    font-size: 1.2em;
+                    padding: .3em;
+                }
+
+                &:hover i {
+                    color: $orange;
+                }
+            }
+        }
+    }
+
+    p {
+        text-align: center;
+        border-top: 1px solid #2f3135;
+        color: #414348;
+        margin-top: 2em;
+        padding: 1em;
+    }
+}
+
+@include break(tablet) {
+    footer {
+        padding: 3em 3em 0;
+
+        .main-wrapper {
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: center;
+
+            li {
+                margin: 0 auto;
+            }
+
+            .links a {
+                display: inline-block;
+                padding: 0 .5em;
+            }
+
+            .newsletter, .social {
+                margin-top: 2em;
+            }
+        }
+    }
+}
+
+
+@include break(phone) {
+    footer {
+        padding: 3em 1em;
+
+        .main-wrapper {
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: center;
+
+            li {
+                margin: 0 auto;
+            }
+
+            .links a {
+                display: inline-block;
+                padding: 0 .5em;
+            }
+
+            .newsletter, .social {
+                margin-top: 2em;
+            }
+        }
+    }
+}

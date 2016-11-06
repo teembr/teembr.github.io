@@ -1,0 +1,68 @@
+.problem-1 {
+
+    .problems {
+        margin-bottom: 5em;
+        padding: 0 10em;
+
+        li {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 4em;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            div {
+                margin-right: 5em;
+
+                img {
+                    width: 15em;
+                }
+            }
+
+            header {
+                align-self: center;
+                line-height: 2em;
+
+                p {
+                    line-height: 1.8em;
+                }
+            }
+        }
+    }
+
+    @include break(tablet) {
+        .problems {
+            padding: 0;
+
+            li div {
+                margin-right: 3em;
+            }
+        }
+    }
+
+
+    @include break(phone) {
+        .problems {
+            padding: 0;
+
+            li {
+                flex-direction: column;
+                text-align: center;
+
+                div {
+                    margin: 0 0 1.2em;
+
+                    img {
+                        width: 13em;
+                    }
+                }
+            }
+        }
+
+        .problems + header {
+            margin-bottom: 0;
+        }
+    }
+}

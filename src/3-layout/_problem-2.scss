@@ -1,0 +1,70 @@
+.problem-2 {
+    background: $gray;
+    margin-bottom: 0;
+    padding: 4em;
+
+    ul {
+        display: flex;
+        margin-bottom: 4em;
+        padding: 0 10em;
+        text-align: center;
+
+        li {
+            flex: 1;
+
+            img {
+                width: 11em;
+            }
+        }
+    }
+
+    @include break(tablet) {
+        ul {
+            margin-bottom: 3em;
+            padding: 0;
+        }
+    }
+
+    @include break(phone) {
+
+        ul {
+            flex-direction: column;
+            margin-bottom: 3em;
+            padding: 0;
+
+            li {
+                margin-bottom: 3em;
+
+                &:last-child {
+                    margin:0;
+                }
+            }
+        }
+    }
+
+    .center-header:last-child {
+        margin-bottom: 0;
+        padding: 0 20em;
+    }
+}
+
+@include break(tablet) {
+    .problem-2 {
+
+        padding: 3em;
+
+        .center-header:last-child {
+            padding: 0;
+        }
+    }
+}
+
+@include break(phone) {
+    .problem-2 {
+        padding: 3em 1em;
+
+        .center-header:last-child {
+            padding: 0;
+        }
+    }
+}
