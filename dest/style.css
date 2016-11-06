@@ -60,6 +60,10 @@ a {
         font-size: 45px; }
     .home-page nav .info-container .btn {
       line-height: 32px; }
+  .home-page nav .info-container.scrolled {
+    background-color: #fff; }
+    .home-page nav .info-container.scrolled .icon-logo {
+      color: #F9A50D; }
 
 .primary-btn-white {
   border: 3px solid #fff;

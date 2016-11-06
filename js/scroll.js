@@ -9,9 +9,13 @@ $(window).scroll(function() {
 	}
 
     if(height  > viewPortHeight - 94) {
-        $("header").addClass("over-bg");
+        $(".info-container").addClass("scrolled");
+        $(".info-container > .btn").addClass("primary-btn-orange");
+        $(".info-container > .btn").removeClass("primary-btn-white");
     }
     else {
-    	$("header").removeClass("over-bg");
+    	$(".info-container").removeClass("scrolled");
+        $(".info-container > .btn").addClass("primary-btn-white");
+        $(".info-container > .btn").removeClass("primary-btn-orange");
     }
 });
