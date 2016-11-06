@@ -9,13 +9,15 @@ $(window).scroll(function() {
 	}
 
     if(height  > viewPortHeight - 94) {
-        $(".info-container").addClass("scrolled");
-        $(".info-container > .btn").addClass("primary-btn-orange");
-        $(".info-container > .btn").removeClass("primary-btn-white");
+        $(".info-container").css("display", "none");
+        // $(".info-container").addClass("scrolled");
+        // $(".info-container > .btn").addClass("primary-btn-orange");
+        // $(".info-container > .btn").removeClass("primary-btn-white");
     }
     else {
-    	$(".info-container").removeClass("scrolled");
-        $(".info-container > .btn").addClass("primary-btn-white");
-        $(".info-container > .btn").removeClass("primary-btn-orange");
+        $(".info-container").css("display", "flex");
+    	// $(".info-container").removeClass("scrolled");
+        // $(".info-container > .btn").addClass("primary-btn-white");
+        // $(".info-container > .btn").removeClass("primary-btn-orange");
     }
 });
