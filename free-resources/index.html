@@ -86,13 +86,14 @@
     <script>
         $(window).load(function(e) {
             // jQuery(document).ready(function($){
+            $('div.fb-messengermessageus iframe').on('load', function(){
                 $('div.fb-messengermessageus iframe').iframeTracker({
                     blurCallback: function(){
                         console.log('tracking here');
                         fbq('track', "AddToCart");
                     }
                 });
-            // });
+            });
         });
 
         window.fbAsyncInit = function() {
@@ -119,12 +120,14 @@
         // });
 
         $(function() {
-            $('div.fb-messengermessageus iframe').iframeTracker({
-                blurCallback: function(){
-                    console.log('tracking here 1');
-                    fbq('track', "AddToCart");
-                }
-            });
+            $('div.fb-messengermessageus iframe').on('load', function(){
+                $('div.fb-messengermessageus iframe').iframeTracker({
+                    blurCallback: function(){
+                        console.log('tracking here 1');
+                        fbq('track', "AddToCart");
+                    }
+                });
+            )};
         });
     </script>
 </html>
