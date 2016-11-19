@@ -84,16 +84,16 @@
     <script src="../js/messengerBtn.js"></script>
     <script src="../js/jquery.iframetracker.js"></script>
     <script>
-        $(window).load(function(e) {
-            jQuery(document).ready(function($){
-                $('div.fb-messengermessageus iframe').iframeTracker({
-                    blurCallback: function(){
-                        console.log('tracking here');
-                        fbq('track', "AddToCart");
-                    }
-                });
-            });
-        });
+        // $(window).load(function(e) {
+        //     jQuery(document).ready(function($){
+        //         $('div.fb-messengermessageus iframe').iframeTracker({
+        //             blurCallback: function(){
+        //                 console.log('tracking here');
+        //                 fbq('track', "AddToCart");
+        //             }
+        //         });
+        //     });
+        // });
 
         window.fbAsyncInit = function() {
           FB.init({
@@ -117,5 +117,14 @@
         //     var screenwidth = screen.width-250;
         //     window.open("https://m.me/teembrdesigns", '_blank',"width=950,height=800,left="+screenwidth);
         // });
+
+        $(function() {
+            $('div.fb-messengermessageus iframe').iframeTracker({
+                blurCallback: function(){
+                    console.log('tracking here');
+                    fbq('track', "AddToCart");
+                }
+            });
+        });
     </script>
 </html>
