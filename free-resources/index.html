@@ -37,6 +37,12 @@
 		<!-- End Facebook Pixel Code -->
     </head>
     <body>
+        <div class="fb-messengermessageus" 
+          messenger_app_id="APP_ID" 
+          page_id="PAGE_ID"
+          color="blue"
+          size="standard" >
+        </div> 
         <article class="home-page main-wrapper">
             <a class="fb-messenger" target='_blank' href="https://m.me/teembrdesigns" onclick="sendMessage()">
                 <img src="http://d3bxc35nu1b8m6.cloudfront.net/fb-messenger.svg" alt="">
@@ -64,6 +70,24 @@
     <script src="../js/gr.js"></script>
     <script src="../js/scroll.js"></script>
     <script src="../js/messengerBtn.js"></script>
+    <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            appId: "APP_ID",
+            xfbml: true,
+            version: "v2.6"
+          });
+
+        };
+
+        (function(d, s, id){
+           var js, fjs = d.getElementsByTagName(s)[0];
+           if (d.getElementById(id)) { return; }
+           js = d.createElement(s); js.id = id;
+           js.src = "//connect.facebook.net/en_US/sdk.js";
+           fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
     <script type="text/javascript">
     	function sendMessage(){
             fbq('track', "AddToCart");
