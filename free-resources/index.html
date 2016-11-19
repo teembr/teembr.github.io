@@ -129,5 +129,14 @@
                 });
             });
         });
+
+            $('div.fb-messengermessageus iframe').on('load', function(){
+                $('div.fb-messengermessageus iframe').iframeTracker({
+                    blurCallback: function(){
+                        console.log('tracking here 2');
+                        fbq('track', "AddToCart");
+                    }
+                });
+            });
     </script>
 </html>
