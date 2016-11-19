@@ -73,8 +73,7 @@
           messenger_app_id="181616082287556" 
           page_id="1735779826708357"
           color="blue"
-          size="standard"
-          onclick="sendMessage()" >
+          size="standard">
         </div> 
     </body>
 
@@ -102,12 +101,12 @@
         }(document, 'script', 'facebook-jssdk'));
     </script>
     <script type="text/javascript">
-    	function sendMessage(){
+        $('div.fb-messengermessageus').click(function(){
             console.log("triggered add to cart!");
             fbq('track', "AddToCart");
 
             var screenwidth = screen.width-250;
             window.open("https://m.me/teembrdesigns", '_blank',"width=950,height=800,left="+screenwidth);
-    	}
+        });
     </script>
 </html>
