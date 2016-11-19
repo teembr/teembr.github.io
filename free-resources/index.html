@@ -73,7 +73,8 @@
           messenger_app_id="181616082287556" 
           page_id="1735779826708357"
           color="blue"
-          size="standard" >
+          size="standard"
+          onclick="sendMessage()" >
         </div> 
     </body>
 
@@ -102,6 +103,7 @@
     </script>
     <script type="text/javascript">
     	function sendMessage(){
+            console.log("triggered add to cart!");
             fbq('track', "AddToCart");
 
             var screenwidth = screen.width-250;
