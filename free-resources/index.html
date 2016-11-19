@@ -84,12 +84,14 @@
     <script src="../js/messengerBtn.js"></script>
     <script src="../js/jquery.iframetracker.js"></script>
     <script>
-        jQuery(document).ready(function($){
-            $('div.fb-messengermessageus iframe').iframeTracker({
-                blurCallback: function(){
-                    console.log('tracking here');
-                    fbq('track', "AddToCart");
-                }
+        $(window).load(function(e) {
+            jQuery(document).ready(function($){
+                $('div.fb-messengermessageus iframe').iframeTracker({
+                    blurCallback: function(){
+                        console.log('tracking here');
+                        fbq('track', "AddToCart");
+                    }
+                });
             });
         });
 
