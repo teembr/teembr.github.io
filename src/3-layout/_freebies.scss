@@ -1,0 +1,102 @@
+.freebies {
+
+    background: #f5f5f5;
+
+    .jumbotron {
+       margin: 0;
+       height: 60vh;
+       overflow: hidden;
+       position: relative;
+
+       @include break(phone) {
+           height: 45vh;
+       }
+
+       header {
+           position: absolute;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+
+           img {
+               width: 15em;
+           }
+
+           @include break(tablet) {
+               img {
+                   width: 12em;
+               }
+           }
+
+           @include break(phone) {
+               img {
+                   width: 10em;
+               }
+           }
+       }
+   }
+
+   .download-info {
+        background: $white;
+        border-radius: 5px;
+        box-shadow: 0px 3px 6px #cecece;
+        margin: 0;
+        padding: 4em;
+        position: relative;
+        top: -5em;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 630px;
+
+
+        .img-container {
+            border-radius: 5px;
+            height: 315px;
+            margin-bottom: 2em;
+            overflow: hidden;
+        }
+
+        .desc {
+            ul {
+                list-style-type: circle;
+                padding: 0 2em;
+
+                li {
+                    padding: .3em 0;
+                }
+            }
+
+            p , .features {
+                margin-bottom: 2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+        }
+    }
+
+    @include break(tablet) {
+
+        .download-info {
+            top: -1em;
+            width: 540px;
+        }
+    }
+
+    @include break(phone) {
+        .download-info {
+            padding: 1em 3em 3em;
+            width: 300px;
+            top: -1em;
+
+            .img-container {
+                height: 150px;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
