@@ -82,7 +82,15 @@
     <script src="../js/gr.js"></script>
     <script src="../js/scroll.js"></script>
     <script src="../js/messengerBtn.js"></script>
+    <script src="../js/jquery.iframetracker.js"></script>
     <script>
+        jQuery(document).ready(function($){
+            $('div.fb-messengermessageus iframe').iframeTracker({
+                blurCallback: function(){
+                }
+            });
+        });
+
         window.fbAsyncInit = function() {
           FB.init({
             appId: "181616082287556",
