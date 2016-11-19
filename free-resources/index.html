@@ -87,6 +87,7 @@
         jQuery(document).ready(function($){
             $('div.fb-messengermessageus iframe').iframeTracker({
                 blurCallback: function(){
+                    console.log('tracking here');
                     fbq('track', "AddToCart");
                 }
             });
