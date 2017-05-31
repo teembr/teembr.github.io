@@ -1,0 +1,255 @@
+* {
+    color: white;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: all .5s;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main-wrapper {
+    width: 100%;
+}
+
+/*
+Scene Title General Style
+*/
+
+.scene-title {
+    background: #130b2a;
+    height: 100vh;
+    position: relative;
+}
+
+.scene-title .scene-title-text {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.scene-title .scene-title-text .main-btn-wrapper {
+    margin-top: 5em;
+    text-align: center;
+}
+
+.scene-title-text .main-btn-wrapper button {
+    background: none;
+    color: #7b3d98;
+    cursor: pointer;
+    border: 3px solid #7b3d98;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    padding: .75em 3em;
+
+}
+
+.scene-title-text .main-btn-wrapper button:hover {
+    background: #7b3d98;
+    color: #fff;
+}
+
+/*
+Scene Text General Style
+*/
+
+.scene-text {
+    background: rgba(19, 11, 42, 0.65);
+    padding: 2em;
+    position: absolute;
+}
+
+.scene-text p {
+    font-size: 18px;
+    line-height: 36px;
+}
+
+.scene-text .btn-wrapper {
+    font-size: 18px;
+    margin-top: 2em;
+    text-align: right;
+}
+
+.scene-text .btn-wrapper a {
+    background: none;
+    border: 2px solid #7b3d98;
+    border-radius: 30px;
+    color: #7b3d98;
+    display: inline-block;
+    padding: .5em 2em;
+    text-decoration: none;
+}
+
+.scene-text .btn-wrapper a:hover {
+    background: #7b3d98;
+    color: #fff;
+}
+
+/*
+Title Section
+*/
+
+.yousef-infographics .title-section {
+    background: url("../img/wb-ysf-img/title-bg.png") top no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.yousef-infographics .title-section img {
+    position: absolute;
+}
+
+.yousef-infographics .title-section .title-main {
+    width: 690px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.yousef-infographics .title-section .title-text {
+    width: 450px;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*
+Scene 1 Title
+*/
+
+.scene-title .scene-title-text img {
+    display: inline-block;
+    width: 450px;
+}
+
+.scene-1-title .scene-title-text p, .thankyou-scene .scene-title-text p {
+    font-size: 1.2rem;
+    margin-top: 1em;
+    text-align: center;
+}
+
+/*
+Scene 1
+*/
+
+.scene-1 {
+    background-color: #130b2a;
+    background: url('../img/wb-ysf-img/scene-1-bg.png') top no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.scene-1 .scene-1-main {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 750px;
+}
+
+.scene-1 .scene-1-text-a {
+    top: 15%;
+    left: 5%;
+    width: 450px;
+}
+
+/*
+Scene 2
+*/
+
+.scene-2-title .scene-title-text img {
+    width: 350px;
+}
+
+.scene-2-a {
+    background-color: #130b2a;
+    background: url('../img/wb-ysf-img/scene-1-bg.png') top no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+
+.scene-2-a .scene-2-main {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 750px;
+}
+
+/*
+Scene 3
+*/
+
+.scene-3-title .scene-title-text img {
+    width: 350px;
+}
+
+.scene-3 {
+    background-color: #130b2a;
+    background: url('../img/wb-ysf-img/scene-3-bg.png') top no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.scene-3 .scene-3-main {
+    position: absolute;
+    width: 750px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*
+Thank you Scene
+*/
+.thankyou-scene {
+    height: 75vh;
+}
+
+/*
+Footer Design
+*/
+
+footer {
+    background-color: #130b2a;
+    padding: 3em 2em;
+    text-align: center;
+}
+
+footer p {
+    color: #7b3d98;
+    margin-bottom: 1em;
+}
+
+footer a {
+    display: inline-block;
+}
+
+footer a img {
+    width: 120px;
+}
+
+footer .social-links {
+    margin-top: .5em;
+}
+
+footer .social-links a {
+    display: inline-block;
+    font-size: 21px;
+    margin: 0 3px;
+}
+
+footer .social-links i {
+    color: #7b3d98;
+}
