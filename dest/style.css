@@ -774,3 +774,9 @@ footer {
 
   .freebies .download-info .img-container img {
     width: 100%; } }
+
+  .messenger-cta {
+    text-align: center;
+    padding-top: 50px;
+  } 
+
